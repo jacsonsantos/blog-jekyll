@@ -35,7 +35,7 @@ layout: default
 <div class="container">
         <div class="row mb-2">
           <div class="col-12 text-center pt-3">
-            <h1>&Uacute;ltimas Not&iacute;cias</h1>
+            <h1>&Uacute;ltimas Teste</h1>
             <p>Confira as ultimas notificas do Blog</p>
           </div>
         </div>
