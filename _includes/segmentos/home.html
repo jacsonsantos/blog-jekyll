@@ -1,20 +1,39 @@
+{% if home.versao == 'default' %}
 <section id="topo-agencias">
     <div class="row">
         <div class="column width-6">
-            <h1>Programa de parceiros</h1>
-            <h2>Comprove todos os resultados das suas campanhas de marketing para seus clientes</h2>
-            <p>Transforme ligações telefônicas em resultados com inteligência de voz e ajude seus clientes a
-                alcançarem alta performance em conversão.</p>
-            <a href="#contato" class="abreFormulario trackedEvent" data-categoria="Agências"
+            <h1>{{ home.titulo }}</h1>
+            <h2>{{ home.subtitulo }}</h2>
+            <p>{{ home.content }}</p>
+            <a href="{{ home.acao_botao_um}}" class="abreFormulario trackedEvent" data-categoria="Agências"
                 data-acao="Solicite uma demo" data-rotulo="Topo"><i class="fa fa-user-plus"
-                    aria-hidden="true"></i> Seja um parceiro</a>
-            <a href="/agencias#mais-vantagens" class="scroll-link trackedEvent" data-categoria="Agências"
+                    aria-hidden="true"></i> {{ home.botao_um }}</a>
+            <a href="{{ home.acao_botao_dois}}" class="scroll-link trackedEvent" data-categoria="Agências"
                 data-acao="Botões" data-rotulo="Planos para agências (topo)"><i class="fa fa-tags"
-                    aria-hidden="true"></i> Conheça todas as vantagens</a>
+                    aria-hidden="true"></i> {{ home.botao_dois}}</a>
         </div>
         <div class="column width-6">
-            <img src="/assets/images/agencias/celulares-topo.png.pagespeed.ce.yLbF7ZvKdw.png"
+            <img src="{{ home.imagem }}"
                 alt="PhoneTrack para agências">
         </div>
     </div>
 </section>
+{% endif %}
+{% if home.versao == 'simple' %}
+<section id="topo-agencias">
+    <div class="row">
+        <div class="column width-6">
+            <h1>{{ home.titulo }}</h1>
+            <h2>{{ home.subtitulo }}</h2>
+            <p>{{ home.content }}</p>
+            <a href="{{ home.acao_botao_um}}" class="abreFormulario trackedEvent" data-categoria="Agências"
+                data-acao="Solicite uma demo" data-rotulo="Topo"><i class="fa fa-user-plus"
+                    aria-hidden="true"></i> {{ home.botao_um }}</a>
+        </div>
+        <div class="column width-6">
+            <img src="{{ home.imagem }}"
+                alt="PhoneTrack para agências">
+        </div>
+    </div>
+</section>    
+{% endif %}

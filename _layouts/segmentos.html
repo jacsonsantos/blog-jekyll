@@ -16,23 +16,23 @@
 		<link rel="shortcut icon" href="/favicon.ico">
 	<![endif]-->
     <!--[if !lt IE 11]>-->
-    <link rel="shortcut icon" type="image/x-icon" href="/fav.png.pagespeed.ce.3GBQtgUFrb.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png.pagespeed.ce.tIFDy4B27N.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png.pagespeed.ce.sGbMrurfEZ.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png.pagespeed.ce.qOQcskmYWD.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png.pagespeed.ce.4-YOEWNYst.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png.pagespeed.ce.dBVgjV3hXh.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png.pagespeed.ce.wNi4o_aQ7b.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png.pagespeed.ce.oOoWE3fwfS.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png.pagespeed.ce.dgLkw2RXHi.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png.pagespeed.ce.m5iJ8Npl_8.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.phonetrack.com.br/fav.png.pagespeed.ce.3GBQtgUFrb.png">
+    <link rel="apple-touch-icon" href="https://www.phonetrack.com.br/apple-touch-icon.png.pagespeed.ce.tIFDy4B27N.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.phonetrack.com.br/apple-touch-icon-57x57.png.pagespeed.ce.sGbMrurfEZ.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.phonetrack.com.br/apple-touch-icon-72x72.png.pagespeed.ce.qOQcskmYWD.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.phonetrack.com.br/apple-touch-icon-76x76.png.pagespeed.ce.4-YOEWNYst.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.phonetrack.com.br/apple-touch-icon-114x114.png.pagespeed.ce.dBVgjV3hXh.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.phonetrack.com.br/apple-touch-icon-120x120.png.pagespeed.ce.wNi4o_aQ7b.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.phonetrack.com.br/apple-touch-icon-144x144.png.pagespeed.ce.oOoWE3fwfS.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.phonetrack.com.br/apple-touch-icon-152x152.png.pagespeed.ce.dgLkw2RXHi.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.phonetrack.com.br/apple-touch-icon-180x180.png.pagespeed.ce.m5iJ8Npl_8.png" />
     <!--<![endif]-->
-    <link rel="icon" type="image/png" href="/favicon-32x32.png.pagespeed.ce.yFbFWEgIQD.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png.pagespeed.ce.yAW6Xr7mvq.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f15b2a">
+    <link rel="icon" type="image/png" href="https://www.phonetrack.com.br/favicon-32x32.png.pagespeed.ce.yFbFWEgIQD.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.phonetrack.com.br/favicon-16x16.png.pagespeed.ce.yAW6Xr7mvq.png" sizes="16x16">
+    <link rel="manifest" href="https://www.phonetrack.com.br/manifest.json">
+    <link rel="mask-icon" href="https://www.phonetrack.com.br/safari-pinned-tab.svg" color="#f15b2a">
     <meta name="theme-color" content="#ff4f12" />
-    <link rel="stylesheet" href="/assets/dist/common.min.css+agencias.min.css.pagespeed.cc.14Q4n7BqKf.css" />
+    <link rel="stylesheet" href="https://www.phonetrack.com.br/assets/dist/common.min.css+agencias.min.css.pagespeed.cc.14Q4n7BqKf.css" />
     <!--[if lt IE 9]>
 	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -48,21 +48,25 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrapper">
         <div class="wrapper-inner">
-            {% includes segmentos/menu.html %}
-            {% includes segmentos/home.html %}
-            {% includes segmentos/bloco_um.html %}
-            {% includes segmentos/bloco_dois.html %}
-            {% includes segmentos/bloco_tres.html %}
-            {% includes segmentos/bloco_quatro.html %}
-            {% includes segmentos/bloco_cinco.html %}
-            {% includes segmentos/bloco_seis.html %}
-            {% includes segmentos/bloco_sete.html %}
-            {% includes segmentos/bloco_oito.html %}
-            {% includes segmentos/footer.html %}
-            {% includes segmentos/form.html %}            
+            {% include segmentos/menu.html %}
+
+            {% for home in site.segmentos %}
+                {% include segmentos/home.html %}
+            {% endfor %}
+
+            {% include segmentos/bloco_um.html %}
+            {% include segmentos/bloco_dois.html %}
+            {% include segmentos/bloco_tres.html %}
+            {% include segmentos/bloco_quatro.html %}
+            {% include segmentos/bloco_cinco.html %}
+            {% include segmentos/bloco_seis.html %}
+            {% include segmentos/bloco_sete.html %}
+            {% include segmentos/bloco_oito.html %}
+            {% include segmentos/footer.html %}
+            {% include segmentos/form.html %}         
         </div>
     </div>
-    <script src="/assets/dist/common.min.js"></script>
+    <script src="https://www.phonetrack.com.br/assets/dist/common.min.js"></script>
     <script>$(document).ready(function () { var maskBehavior = function (val) { return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009'; }, options = { onKeyPress: function (val, e, field, options) { field.mask(maskBehavior.apply({}, arguments), options); } }; $('.form-phone').mask(maskBehavior, options); });</script>
     <script
         type="text/javascript">$(window).stellar(); $.stellar({ horizontalScrolling: true, verticalScrolling: true, horizontalOffset: 0, verticalOffset: 0, responsive: false, scrollProperty: 'scroll', positionProperty: 'position', parallaxBackgrounds: true, parallaxElements: true, hideDistantElements: true, hideElement: function ($elem) { $elem.hide(); }, showElement: function ($elem) { $elem.show(); } });</script>
