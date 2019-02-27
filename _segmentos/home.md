@@ -4,7 +4,7 @@ subtitulo: >-
   Comprove todos os resultados das suas campanhas de marketing para seus
   clientes
 acao_botao_um:
-botao_um: Seja um parceiro
+botao_um: Beleza
 acao_botao_dois: '/agencias#mais-vantagens'
 botao_dois: Conheça todas as vantagens
 imagem: >-
